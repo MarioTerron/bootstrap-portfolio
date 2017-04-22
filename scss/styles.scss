@@ -1,0 +1,52 @@
+// Variables
+// ==========================================================================
+$c-section-bg:			#ededed;
+$c-section-text:		#363636;
+
+$c-footer-bg:   		#3b5a76;
+$c-footer-text:			#fff;
+
+
+/* Structure
+========================================================================== */
+
+body {
+	margin: 0;
+}
+
+ul {
+	padding-left: 0;
+	list-style-type: none;
+}
+
+.container {
+	padding-right: 30px;
+	padding-left: 30px;
+}
+
+
+/* Layout
+========================================================================== */
+
+.main-section {
+	background-color: $c-section-bg;
+	padding-top: 40px;
+
+	h1 {
+		text-align: center;
+		color: $c-section-text;
+	}
+}
+
+// Footer
+.footer {
+	display: flex;
+	align-items: center;
+	height: 100px;
+	background-color: $c-footer-bg;
+
+	&-text {
+		margin-top: 0;
+		color: $c-footer-text;
+	}
+}
