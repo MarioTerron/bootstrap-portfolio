@@ -14,11 +14,11 @@ ul {
 /* Layout
 ========================================================================== */
 .main-section {
-  background-color: #ededed;
-  padding-top: 40px; }
+  padding-top: 40px;
+  background-color: #ededed; }
   .main-section h1 {
-    text-align: center;
-    color: #363636; }
+    color: #363636;
+    text-align: center; }
 
 .footer {
   display: flex;
