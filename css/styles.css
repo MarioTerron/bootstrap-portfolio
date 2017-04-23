@@ -19,7 +19,7 @@ ul {
   .main-section .container {
     border: 1.75px solid #bbb;
     background-color: #fff; }
-  .main-section img {
+  .main-section .profile-img {
     display: block;
     position: relative;
     top: -40px;
@@ -75,6 +75,10 @@ ul {
         flex: 0 0 20%; }
       .main-section .panel .panel-body .description-container {
         flex: 0 0 80%; }
+  .main-section .col-container {
+    padding: 0; }
+  .main-section .glyphicon {
+    margin-right: 5px; }
 
 .footer {
   display: flex;

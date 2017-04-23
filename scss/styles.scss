@@ -38,7 +38,7 @@ ul {
 		background-color: $c-container-bg;
 	}
 
-	img {
+	.profile-img {
 		display: block;
 		position: relative;
 		top: -40px;
@@ -130,7 +130,14 @@ ul {
 				flex: 0 0 80%;
 			}
 		}
+	}
 
+	.col-container {
+		padding: 0;
+	}
+
+	.glyphicon {
+		margin-right: 5px;
 	}
 
 }
