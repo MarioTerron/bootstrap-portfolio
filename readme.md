@@ -7,4 +7,4 @@ Full Stack Web Development Bootcamp.
 
 [Here](https://github.com/juanmaguitar/bootstrap-exercises/tree/master/02-portfolio) you can see the description of the exercise and [here](https://marioterron.github.io/bootstrap-portfolio) you can follow my progress.
 
-![Snapshot](img/full-site.jpeg)
+![Snapshot](img/full-site.jpg)
