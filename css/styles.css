@@ -16,15 +16,75 @@ ul {
 .main-section {
   padding-top: 40px;
   background-color: #ededed; }
+  .main-section .container {
+    border: 1.75px solid #bbb;
+    background-color: #fff; }
+  .main-section img {
+    display: block;
+    position: relative;
+    top: -40px;
+    margin: 0 auto; }
   .main-section h1 {
     color: #363636;
-    text-align: center; }
+    text-align: center;
+    text-transform: uppercase; }
+    .main-section h1 .text-primary {
+      color: #3b5a76; }
+  .main-section h2 {
+    margin-bottom: 20px;
+    color: #3b5a76;
+    font-size: 1.75em;
+    text-transform: uppercase; }
+  .main-section li {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    font-weight: 500; }
+    .main-section li [class^="icon-"] {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      margin-right: 5px;
+      vertical-align: middle; }
+    .main-section li .icon-phone {
+      background-image: url("../img/mobile-phone.png");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover; }
+    .main-section li .icon-email {
+      background-image: url("../img/email.png");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover; }
+    .main-section li .icon-facebook {
+      background-image: url("../img/facebook.png");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover; }
+    .main-section li .icon-twitter {
+      background-image: url("../img/twitter.png");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover; }
+  .main-section .panel {
+    border: 0;
+    border-radius: 0;
+    background-color: #ededed; }
+    .main-section .panel .panel-body {
+      display: flex; }
+      .main-section .panel .panel-body .date-container {
+        flex: 0 0 20%; }
+      .main-section .panel .panel-body .description-container {
+        flex: 0 0 80%; }
 
 .footer {
   display: flex;
   align-items: center;
   height: 100px;
   background-color: #3b5a76; }
+  .footer .container {
+    margin: 0; }
   .footer-text {
     margin-top: 0;
-    color: #fff; }
+    color: #fff;
+    font-weight: 600;
+    text-align: left; }

@@ -1,9 +1,13 @@
 // Variables
 // ==========================================================================
+
+$c-primary: #3b5a76;
 $c-section-bg: #ededed;
 $c-section-text: #363636;
-$c-footer-bg: #3b5a76;
+$c-container-bg: #fff;
+$c-container-border: #bbb;
 $c-footer-text: #fff;
+$c-panel-bg: #ededed;
 
 /* Structure
 ========================================================================== */
@@ -23,25 +27,128 @@ ul {
 
 /* Layout
 ========================================================================== */
+
+// Main Section
 .main-section {
 	padding-top: 40px;
 	background-color: $c-section-bg;
 
+	.container {
+		border: 1.75px solid $c-container-border;
+		background-color: $c-container-bg;
+	}
+
+	img {
+		display: block;
+		position: relative;
+		top: -40px;
+		margin: 0 auto;
+	}
+
 	h1 {
 		color: $c-section-text;
 		text-align: center;
-	}
-}
+		text-transform: uppercase;
 
+		.text-primary {
+			color: $c-primary;
+		}
+	}
+
+	h2 {
+		margin-bottom: 20px;
+		color: $c-primary;
+		font-size: 1.75em;
+		text-transform: uppercase;
+	}
+
+	li {
+		margin-bottom: 10px;
+		font-size: 1.5rem;
+		font-weight: 500;
+
+		[class^="icon-"] {
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			margin-right: 5px;
+			vertical-align: middle;
+		}
+
+		.icon-phone {
+			background: {
+				image: url('../img/mobile-phone.png');
+				repeat: no-repeat;
+				position: center center;
+				size: cover;
+			}
+		}
+
+		.icon-email {
+			background: {
+				image: url('../img/email.png');
+				repeat: no-repeat;
+				position: center center;
+				size: cover;
+			}
+		}
+
+		.icon-facebook {
+			background: {
+				image: url('../img/facebook.png');
+				repeat: no-repeat;
+				position: center center;
+				size: cover;
+			}
+		}
+
+		.icon-twitter {
+			background: {
+				image: url('../img/twitter.png');
+				repeat: no-repeat;
+				position: center center;
+				size: cover;
+			}
+		}
+	}
+
+	// Panel
+	.panel {
+		border: 0;
+		border-radius: 0;
+		background-color: $c-panel-bg;
+
+
+		.panel-body {
+			display: flex;
+
+			.date-container {
+				flex: 0 0 20%;
+			}
+
+			.description-container {
+				flex: 0 0 80%;
+			}
+		}
+
+	}
+
+}
 // Footer
 .footer {
 	display: flex;
 	align-items: center;
 	height: 100px;
-	background-color: $c-footer-bg;
+	background-color: $c-primary;
+
+	.container {
+		margin: 0;
+	}
 
 	&-text {
 		margin-top: 0;
 		color: $c-footer-text;
+		font-weight: 600;
+		text-align: left;
 	}
 }
